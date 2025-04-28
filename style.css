@@ -14,25 +14,24 @@ header {
     background: #6a0dad;
     padding: 10px 20px;
     display: flex;
-    justify-content: flex-start; /* <-- cambia space-between in flex-start */
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-.logo {
-    font-size: 1.5rem;
-    color: #fff;
-}
-
 .menu-toggle {
     font-size: 2rem;
     color: #fff;
     cursor: pointer;
-    margin-right: 20px; /* <-- distanza dal logo */
+    margin-right: 20px; /* Distanza dal logo */
     background: none;
     border: none;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #fff;
 }
 
 nav {
@@ -41,7 +40,7 @@ nav {
     flex-direction: column;
     position: absolute;
     top: 60px;
-    left: 20px; /* Menu aperto sotto il bottone */
+    left: 20px;
     background: #6a0dad;
     border-radius: 5px;
     overflow: hidden;
