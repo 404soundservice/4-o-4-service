@@ -3,85 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4'o'4 Service</title>
+    <title>4'o'4 Service Audio</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="scripts/menu.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
-
 <header>
-    <button id="menu-toggle" class="menu-toggle">&#9776;</button> <!-- Bottone hamburger -->
-    <div class="logo">4’o’4 Service</div> <!-- Logo o nome sito -->
-</header>
-    
-    <nav id="nav-menu" class="hidden">
-        <a href="#home">Home</a>
-        <a href="#funktion-one">Funktion One Sound System</a>
-        <a href="#funktion-china">Funktion One China Facsimile</a>
-        <a href="#altri-sistemi">Altri Sistemi Audio</a>
-        <a href="#luci">Luci</a>
-        <a href="#laser-show">Light e Laser Show</a>
-        <a href="#dj-attrezzatura">Attrezzatura DJ</a>
-        <a href="#contatti">Contatti</a>
+    <div class="logo-area">
+        <img src="images/speaker-icon.png" alt="Speaker Icon" class="speaker-icon">
+        <h1>4'o'4 Service Audio</h1>
+    </div>
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="funktion-one.html">Funktion One Sound System</a></li>
+            <li><a href="funktion-one-china.html">Funktion One China facsimile</a></li>
+            <li><a href="altri-sistemi-audio.html">Altri sistemi audio</a></li>
+            <li><a href="luci-laser.html">Luci e Laser</a></li>
+            <li><a href="show-luci-laser.html">Show Luci e Laser</a></li>
+            <li><a href="attrezzatura-dj.html">Attrezzatura Dj</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+        </ul>
     </nav>
 </header>
 
-<section id="home" class="section">
-    <h1>Benvenuto su 4'o'4 Service</h1>
-    <div class="carousel-placeholder">[ Immagine slider qui ]</div>
-</section>
-
-<section id="funktion-one" class="section">
-    <h2>Funktion One Sound System</h2>
-    <div class="content-placeholder">[ Aggiungi qui testo e immagini ]</div>
-</section>
-
-<section id="funktion-china" class="section">
-    <h2>Funktion One China Facsimile</h2>
-    <div class="content-placeholder">
-        <img align="left" src="images/china2sub2teste.jpg" style="max-width: 40%; height: auto;">
-        <text Funktion-One china facsimile>
-        <text 2 x R2 MidHigh Speakers>
-        <text 2 x F218 mk2 Bass Speakers (2 x 18 Bass Drivers)>
-        <txt Amplificatori>
-        <text Tutti i cablaggi necessari>
-        <text L'uso tipico è per eventi eleganti, grandi feste, feste all'aperto, eventi danzanti, musica moderna con bassi potenti>
-        
-</section>
-
-<section id="altri-sistemi" class="section">
-    <h2>Altri Sistemi Audio</h2>
-    <div class="content-placeholder">[ Aggiungi qui testo e immagini ]</div>
-</section>
-
-<section id="luci" class="section">
-    <h2>Luci</h2>
-    <div class="content-placeholder">[ Aggiungi qui testo e immagini ]</div>
-</section>
-
-<section id="laser-show" class="section">
-    <h2>Light e Laser Show</h2>
-    <div class="content-placeholder">[ Aggiungi qui testo e immagini ]</div>
-</section>
-
-<section id="dj-attrezzatura" class="section">
-    <h2>Attrezzatura DJ</h2>
-    <div class="content-placeholder">[ Aggiungi qui testo e immagini ]</div>
-</section>
-
-<section id="contatti" class="section">
-    <h2>Contatti</h2>
-    <div class="content-placeholder">
-        <p>Nome azienda: 4'o'4 Service</p>
-        <p>Email: 4o4.soundservice@gmail.com</p>
-        <p>Instagram: @4o4service</p>
-        <p>Facebook: </p>
-    </div>
-</section>
-    
-<footer>
-    <p>© 2025 4'o'4 Service - Tutti i diritti riservati</p>
-</footer>
-
+<main>
+    <section class="home-section">
+        <h2>Benvenuto su 4'o'4 Service Audio!</h2>
+        <p>Il miglior service audio, luci e dj equipment per i tuoi eventi.</p>
+    </section>
+</main>
 </body>
 </html>
