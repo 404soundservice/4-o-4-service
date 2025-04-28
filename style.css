@@ -1,81 +1,85 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+/* Reset base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-    background: #f9f9f9;
-    color: #333;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #5a2a7b;
+    color: black;
+    line-height: 1.6;
 }
 
 header {
-    background: #6a0dad;
-    padding: 10px 20px;
+    background-color: #4b216a;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 15px 30px;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-.menu-toggle {
-    font-size: 2rem;
-    color: #fff;
-    cursor: pointer;
-    margin-right: 20px; /* Distanza dal logo */
-    background: none;
-    border: none;
-}
-
-.logo {
-    font-size: 1.5rem;
-    color: #fff;
-}
-
-nav {
-    text-align: left;
+.logo-area {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 20px;
-    background: #6a0dad;
-    border-radius: 5px;
-    overflow: hidden;
+    align-items: center;
 }
 
-nav a {
-    padding: 10px;
-    text-decoration: none;
-    color: #fff;
-    border-bottom: 1px solid #fff;
+.speaker-icon {
+    width: 35px;
+    margin-right: 12px;
 }
 
-nav a:last-child {
-    border-bottom: none;
+h1 {
+    font-size: 26px;
+    color: black;
 }
 
-.hidden {
+.hamburger {
+    font-size: 32px;
+    cursor: pointer;
     display: none;
 }
 
-.section {
-    padding: 60px 20px;
-    text-align: center;
+#menu {
+    display: flex;
+    gap: 20px;
 }
 
-.carousel-placeholder, .content-placeholder {
-    margin: 20px 0;
-    padding: 40px;
-    border: 2px dashed #6a0dad;
+#menu li {
+    list-style: none;
 }
 
-footer {
-    background: #6a0dad;
-    color: #fff;
+#menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+#menu li a:hover {
+    color: white;
+}
+
+main {
+    padding: 40px 30px;
+}
+
+.home-section {
     text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hamburger { display: block; }
+    #menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #4b216a;
+    }
+    #menu li { text-align: center; padding: 15px 0; }
 }
