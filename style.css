@@ -34,11 +34,12 @@ header {
 }
 
 nav {
+    text-align: left;
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 60px;
-    right: 20px;
+    left: 20px;
     background: #6a0dad;
     border-radius: 5px;
     overflow: hidden;
