@@ -20,17 +20,12 @@ header {
   padding: 10px 20px;
 }
 
-.hamburger {
-  font-size: 30px;
-  font-weight: bold;
-  color: black;
-  cursor: pointer;
-}
-
 .logo-container {
   display: flex;
   align-items: center;
   gap: 10px;
+  justify-content: center;
+  flex: 1;
 }
 
 .speaker-icon {
@@ -43,32 +38,38 @@ header {
   color: black;
 }
 
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background: black;
+  height: 3px;
+  width: 100%;
+  display: block;
+}
+
 .nav-menu {
   display: none;
+  flex-direction: column;
   background-color: #5e2d91;
-  width: 100%;
+  padding: 10px 0;
 }
 
-.nav-menu.active {
-  display: block;
-}
-
-.nav-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-menu ul li {
-  border-bottom: 1px solid #4c2375;
-}
-
-.nav-menu ul li a {
-  display: block;
-  padding: 12px 20px;
-  text-decoration: none;
+.nav-menu a {
   color: black;
+  text-decoration: none;
+  padding: 12px 20px;
   font-weight: bold;
+}
+
+.nav-menu.show {
+  display: flex;
 }
 
 .main-logo {
