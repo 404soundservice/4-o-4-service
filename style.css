@@ -50,6 +50,7 @@ header {
   display: none;
   background-color: #5e2d91;
   width: 100%;
+  text-align: left;
 }
 
 .nav-menu.active {
