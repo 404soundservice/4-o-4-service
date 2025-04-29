@@ -10,56 +10,59 @@ header {
   top: 0;
   width: 100%;
   background-color: #4c2375;
-  z-index: 999;
+  z-index: 1000;
 }
 
 .top-bar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 10px 15px;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .hamburger {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bold;
-  cursor: pointer;
   color: black;
+  cursor: pointer;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
+  gap: 10px;
   justify-content: center;
   flex: 1;
-  gap: 10px;
-}
-
-.site-title {
-  font-weight: bold;
-  font-size: 22px;
-  color: black;
 }
 
 .speaker-icon {
-  height: 22px;
+  height: 24px;
   width: auto;
 }
 
-.menu {
+.site-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+.nav-menu {
   display: none;
-  flex-direction: column;
   background-color: #5e2d91;
-  padding: 0;
-  margin: 0;
+  width: 100%;
+}
+
+.nav-menu.active {
+  display: block;
+}
+
+.nav-menu ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.menu.active {
-  display: flex;
-}
-
-.menu li a {
+.nav-menu ul li a {
   display: block;
   padding: 12px 20px;
   text-decoration: none;
@@ -69,9 +72,9 @@ header {
 
 .main-logo {
   width: 100%;
-  margin-top: 130px;
   max-height: 200px;
   object-fit: contain;
+  margin-top: 120px;
 }
 
 .intro {
