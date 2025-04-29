@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - 4'o'4 Service Audio</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/a2d9d5c6d4.js" crossorigin="anonymous"></script>
-  <script defer src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>4'o'4 Service Audio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-<header>
-  <div class="logo-area">
-    <img src="images/speaker-icon.png" alt="Speaker Icon" class="speaker-icon">
-    <h1>4'o'4 Service Audio</h1>
-  </div>
-  <nav>
-    <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+  <header>
+    <div class="logo">
+      <img src="images/speaker-icon.png" alt="Speaker" />
+      4'o'4 Service Audio
+    </div>
+    <button id="menu-toggle">☰</button>
     <ul id="menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="funktion-one.html">Funktion One Sound System</a></li>
@@ -23,14 +21,25 @@
       <li><a href="altri-sistemi-audio.html">Altri sistemi audio</a></li>
       <li><a href="luci-laser.html">Luci e Laser</a></li>
       <li><a href="show-luci-laser.html">Show Luci e Laser</a></li>
-      <li><a href="attrezzatura-dj.html">Attrezzatura Dj</a></li>
+      <li><a href="attrezzatura-dj.html">Attrezzatura DJ</a></li>
       <li><a href="contatti.html">Contatti</a></li>
     </ul>
-  </nav>
-</header>
-<main>
-  <h2>Benvenuto su 4'o'4 Service Audio!</h2>
-  <p>Il miglior service audio, luci e dj equipment per i tuoi eventi.</p>
-</main>
+  </header>
+
+  <main>
+    <!-- Logo personalizzato -->
+    <div style="text-align: center; margin-top: 20px;">
+      <img src="images/logo.png" alt="Logo 4'o'4" style="max-width: 200px;" />
+    </div>
+
+    <h2 style="text-align: center; margin-top: 30px;">
+      Benvenuto su 4'o'4 Service Audio!
+    </h2>
+    <p style="text-align: center;">
+      Il miglior service audio, luci e dj equipment per i tuoi eventi.
+    </p>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
