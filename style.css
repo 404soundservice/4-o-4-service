@@ -1,3 +1,4 @@
+/* Stile generale */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -5,6 +6,7 @@ body {
   color: black;
 }
 
+/* Header fisso */
 header {
   background-color: #5a049e; /* Viola più scuro */
   position: sticky;
@@ -12,6 +14,7 @@ header {
   z-index: 1000;
 }
 
+/* Navbar */
 .navbar {
   display: flex;
   align-items: center;
@@ -26,6 +29,7 @@ header {
   color: black;
 }
 
+/* Logo + titolo */
 .logo-area {
   display: flex;
   align-items: center;
@@ -34,7 +38,7 @@ header {
 }
 
 .speaker-icon {
-  height: 30px; /* stesse proporzioni del testo */
+  height: 30px; /* stessa proporzione del testo */
 }
 
 .site-title {
@@ -43,6 +47,7 @@ header {
   color: black;
 }
 
+/* Menu di navigazione */
 .nav-links {
   list-style: none;
   display: flex;
@@ -57,10 +62,46 @@ header {
   font-weight: bold;
 }
 
+/* Menu attivo su mobile */
 .nav-links.active {
   display: block;
 }
 
+/* Logo in home */
+.main-logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+}
+
+/* Intestazione delle pagine */
+.intro {
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+/* Sezioni immagine + descrizione */
+.content-block {
+  display: flex;
+  align-items: center;
+  margin: 30px;
+  gap: 20px;
+}
+
+.content-block img {
+  width: 40%;
+  max-width: 300px;
+  height: auto;
+}
+
+.text-block {
+  width: 60%;
+  font-size: 1rem;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -75,16 +116,14 @@ header {
   .nav-links li {
     padding: 10px;
   }
-}
 
-.main-logo {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 20px auto;
-}
+  .content-block {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.intro {
-  text-align: center;
-  padding: 20px;
+  .content-block img,
+  .text-block {
+    width: 100%;
+  }
 }
