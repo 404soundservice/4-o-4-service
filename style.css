@@ -31,13 +31,10 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
-  justify-content: center;
-  flex: 1;
 }
 
 .speaker-icon {
   height: 24px;
-  width: auto;
 }
 
 .site-title {
@@ -50,7 +47,6 @@ header {
   display: none;
   background-color: #5e2d91;
   width: 100%;
-  text-align: left;
 }
 
 .nav-menu.active {
@@ -61,6 +57,10 @@ header {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.nav-menu ul li {
+  border-bottom: 1px solid #4c2375;
 }
 
 .nav-menu ul li a {
