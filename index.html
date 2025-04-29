@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>4'o'4 Service Audio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="images/speaker-icon.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="images/speaker-icon.png" alt="Speaker" class="speaker-icon" />
-      <span>4'o'4 Service Audio</span>
-    </div>
-    <nav>
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="hamburger">&#9776;</label>
-      <ul class="menu">
+    <nav class="navbar">
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <div class="logo-area">
+        <img src="speaker-icon.png" alt="Icona Cassa" class="speaker-icon">
+        <span class="site-title">4’o’4 Service</span>
+      </div>
+      <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="funktion-one.html">Funktion One Sound System</a></li>
-        <li><a href="funktion-one-china.html">Funktion One China facsimile</a></li>
-        <li><a href="altri-sistemi-audio.html">Altri sistemi audio</a></li>
+        <li><a href="funktion-one.html">Funktion One</a></li>
+        <li><a href="lase-sound-f1.html">Lase Sound F1</a></li>
+        <li><a href="altri-impianti.html">Altri Impianti</a></li>
         <li><a href="luci-laser.html">Luci e Laser</a></li>
-        <li><a href="show-luci-laser.html">Show Luci e Laser</a></li>
-        <li><a href="attrezzatura-dj.html">Attrezzatura DJ</a></li>
+        <li><a href="show-luci.html">Show Luci</a></li>
+        <li><a href="attrezzatura-dj.html">Attrezzatura Dj</a></li>
         <li><a href="contatti.html">Contatti</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <!-- LOGO PERSONALIZZABILE SOPRA LA SCRITTA -->
-    <div class="custom-logo">
-      <!-- <img src="images/logo.png" alt="Il tuo logo" /> -->
-    </div>
-    <h1>Benvenuto su 4'o'4 Service Audio!</h1>
-    <p>Il miglior service audio, luci e dj equipment per i tuoi eventi.</p>
+  <main class="home-main">
+    <img src="LOGO-DA-INSERIRE.png" alt="Logo del Service" class="main-logo">
+    <section class="intro">
+      <h1>Il miglior service audio per ogni tipo di evento</h1>
+      <p>Fornitura di impianti audio professionali, luci e attrezzature DJ per qualsiasi occasione. Dai piccoli eventi ai grandi concerti: troviamo la soluzione giusta per ogni budget.</p>
+    </section>
   </main>
-
-  <script src="script.js"></script>
 </body>
 </html>
