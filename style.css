@@ -1,129 +1,83 @@
-/* Stile generale */
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #6a0dad; /* Viola intenso */
+  font-family: 'Arial', sans-serif;
+  background-color: #5e2d91; /* Viola intenso */
   color: black;
 }
 
-/* Header fisso */
 header {
-  background-color: #5a049e; /* Viola più scuro */
-  position: sticky;
+  background-color: #4c2375; /* Viola più scuro per l’header */
+  color: black;
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 1000;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
 }
 
-.hamburger {
-  font-size: 26px;
-  font-weight: bold;
-  cursor: pointer;
-  margin-right: 20px;
-  color: black;
-}
-
-/* Logo + titolo */
 .logo-area {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-right: auto;
-}
-
-.speaker-icon {
-  height: 30px; /* stessa proporzione del testo */
 }
 
 .site-title {
   font-weight: bold;
-  font-size: 1.3rem;
-  color: black;
+  font-size: 22px;
 }
 
-/* Menu di navigazione */
+.speaker-icon {
+  height: 22px; /* uguale al testo */
+  width: auto;
+}
+
+.main-logo {
+  width: 100%;
+  margin-top: 100px;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.intro {
+  padding: 20px;
+  text-align: center;
+}
+
 .nav-links {
-  list-style: none;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #5e2d91;
+}
+
+.nav-links.active {
   display: flex;
-  gap: 15px;
-  margin: 0;
-  padding: 0;
+}
+
+.nav-links li {
+  list-style: none;
 }
 
 .nav-links li a {
+  display: block;
+  padding: 12px 20px;
   text-decoration: none;
   color: black;
   font-weight: bold;
 }
 
-/* Menu attivo su mobile */
-.nav-links.active {
-  display: block;
-}
-
-/* Logo in home */
-.main-logo {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 20px auto;
-}
-
-/* Intestazione delle pagine */
-.intro {
-  text-align: center;
-  padding: 20px;
+.hamburger {
+  font-size: 28px;
   font-weight: bold;
-}
-
-/* Sezioni immagine + descrizione */
-.content-block {
-  display: flex;
-  align-items: center;
-  margin: 30px;
-  gap: 20px;
-}
-
-.content-block img {
-  width: 40%;
-  max-width: 300px;
-  height: auto;
-}
-
-.text-block {
-  width: 60%;
-  font-size: 1rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #5a049e;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-  }
-
-  .nav-links li {
-    padding: 10px;
-  }
-
-  .content-block {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .content-block img,
-  .text-block {
-    width: 100%;
-  }
+  cursor: pointer;
+  color: black;
 }
