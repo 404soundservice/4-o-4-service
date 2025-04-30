@@ -2,47 +2,38 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - 4’o’4 Service</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>4’o’4 Service - Home</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <div class="top-bar">
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="logo-container">
-        <img src="images/speaker-icon.png" alt="Icona speaker" class="speaker-icon">
-        <span class="site-title">4’o’4 Service</span>
-      </div>
+  <header class="top-bar">
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <div class="logo-text">
+      <img src="images/speaker-icon.png" alt="Icona speaker" class="speaker-icon"/>
+      <span class="brand-name">4’o’4 Service</span>
     </div>
-
-    <nav class="nav-menu" id="nav-menu">
-      <a href="index.html">Home</a>
-      <a href="funktion-one.html">Funktion One</a>
-      <a href="lase-sound-f1.html">Lase Sound F1</a>
-      <a href="altri-impianti.html">Altri Impianti</a>
-      <a href="luci-laser.html">Luci e Laser</a>
-      <a href="show-luci.html">Show Luci</a>
-      <a href="attrezzatura-dj.html">Attrezzatura Dj</a>
-      <a href="contatti.html">Contatti</a>
-    </nav>
   </header>
 
-  <main>
-    <img src="images/logo.png" alt="Logo 4’o’4" class="main-logo" />
-    <section class="intro">
-      <h1>Benvenuto su 4’o’4 Service Audio</h1>
-      <p>
-        Forniamo impianti audio professionali per ogni tipo di evento: festival, serate, DJ set, spettacoli e molto altro.
-        Ogni progetto è personalizzabile in base al budget, con soluzioni su misura e un’assistenza tecnica sempre presente.
-      </p>
-    </section>
-  </main>
+  <nav class="side-menu" id="sideMenu">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="funktion-one.html">Funktion One</a></li>
+      <li><a href="lase-sound-f1.html">Lase Sound F1</a></li>
+      <li><a href="altri-impianti.html">Altri Impianti</a></li>
+      <li><a href="luci-laser.html">Luci e Laser</a></li>
+      <li><a href="show-luci.html">Show Luci</a></li>
+      <li><a href="attrezzatura-dj.html">Attrezzatura DJ</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+  </nav>
 
-  <script src="script.js"></script>
+  <main class="content">
+    <img src="images/logo.png" alt="Logo da inserire" class="main-logo"/>
+    <p class="intro-text">
+      4’o’4 Service è il partner perfetto per ogni evento audio! Offriamo impianti per tutte le esigenze e per ogni budget. Contattaci per creare insieme l’atmosfera perfetta.
+    </p>
+  </main>
 </body>
 </html>
