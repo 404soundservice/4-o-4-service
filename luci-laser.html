@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luci e Laser - 4'o'4 Service Audio</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/a2d9d5c6d4.js" crossorigin="anonymous"></script>
-  <script defer src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luci e Laser - 4’o’4 Service</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-<header>
-  <div class="logo-area">
-    <img src="images/speaker-icon.png" alt="Speaker Icon" class="speaker-icon">
-    <h1>4'o'4 Service Audio</h1>
-  </div>
-  <nav>
-    <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
-    <ul id="menu">
+  <header class="top-bar">
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <div class="logo-text">
+      <img src="images/speaker-icon.png" alt="Icona speaker" class="speaker-icon"/>
+      <span class="brand-name">4’o’4 Service</span>
+    </div>
+  </header>
+
+  <nav class="side-menu" id="sideMenu">
+    <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="funktion-one.html">Funktion One Sound System</a></li>
-      <li><a href="funktion-one-china.html">Funktion One China facsimile</a></li>
-      <li><a href="altri-sistemi-audio.html">Altri sistemi audio</a></li>
-      <li><a href="luci-laser.html">Luci e Laser</a></li>
-      <li><a href="show-luci-laser.html">Show Luci e Laser</a></li>
-      <li><a href="attrezzatura-dj.html">Attrezzatura Dj</a></li>
+      <li><a href="funktion-one.html">Funktion One</a></li>
+      <li><a href="lase-sound-f1.html">Lase Sound F1</a></li>
+      <li><a href="altri-impianti.html">Altri Impianti</a></li>
+      <li><a href="luci-laser.html" class="active">Luci e Laser</a></li>
+      <li><a href="show-luci.html">Show Luci</a></li>
+      <li><a href="attrezzatura-dj.html">Attrezzatura DJ</a></li>
       <li><a href="contatti.html">Contatti</a></li>
     </ul>
   </nav>
-</header>
-<main>
-  <h2>Luci e Laser</h2>
-  <div class="page-section">
-    <div class="page-item"><img src="images/example.jpg" alt=""><div>Descrizione 1</div></div>
-    <div class="page-item"><img src="images/example.jpg" alt=""><div>Descrizione 2</div></div>
-    <div class="page-item"><img src="images/example.jpg" alt=""><div>Descrizione 3</div></div>
-    <div class="page-item"><img src="images/example.jpg" alt=""><div>Descrizione 4</div></div>
-    <div class="page-item"><img src="images/example.jpg" alt=""><div>Descrizione 5</div></div>
-  </div>
-</main>
+
+  <main class="content">
+    <h1 class="section-title">Luci e Laser</h1>
+
+    <div class="content-block">
+      <img src="images/luci1.jpg" alt="Immagine da inserire" class="content-image" />
+      <div class="content-text">Descrizione da inserire per il primo sistema luci o laser.</div>
+    </div>
+
+    <div class="content-block">
+      <img src="images/luci2.jpg" alt="Immagine da inserire" class="content-image" />
+      <div class="content-text">Descrizione da inserire per il secondo sistema luci o laser.</div>
+    </div>
+
+    <div class="content-block">
+      <img src="images/luci3.jpg" alt="Immagine da inserire" class="content-image" />
+      <div class="content-text">Descrizione da inserire per il terzo sistema luci o laser.</div>
+    </div>
+
+    <div class="content-block">
+      <img src="images/luci4.jpg" alt="Immagine da inserire" class="content-image" />
+      <div class="content-text">Descrizione da inserire per il quarto sistema luci o laser.</div>
+    </div>
+
+    <div class="content-block">
+      <img src="images/luci5.jpg" alt="Immagine da inserire" class="content-image" />
+      <div class="content-text">Descrizione da inserire per il quinto sistema luci o laser.</div>
+    </div>
+
+    <div class="content-block">
+      <img src="images/luci6.jpg" alt="Immagine da inserire" class="content-image" />
+      <div class="content-text">Descrizione da inserire per il sesto sistema luci o laser.</div>
+    </div>
+  </main>
 </body>
 </html>
